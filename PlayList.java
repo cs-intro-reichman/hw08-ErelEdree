@@ -127,7 +127,7 @@ class PlayList {
      * does nothing and returns -1.
      */
     public void remove(int i) {
-        for (int j = i; j <= this.size; j++) {
+        for (int j = i; j < this.size; j++) {
             tracks[j] = tracks[j + 1];
         }
         this.size--;
