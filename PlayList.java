@@ -110,7 +110,7 @@ class PlayList {
             if (this.size == maxSize) {
                 return false;
             }
-            for (int j = this.size; j >= i; j--) {
+            for (int j = this.size; j > i; j--) {
                 tracks[j] = tracks[j - 1];
             }
             tracks[i] = track;
